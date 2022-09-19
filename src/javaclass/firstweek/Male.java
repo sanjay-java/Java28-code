@@ -7,6 +7,8 @@ public class Male extends  Person {
 
     @Override
     public int getAge(){
+
+        String s = "some sting";
         return  1;
     }
 

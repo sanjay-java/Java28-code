@@ -1,9 +1,11 @@
 package javaclass.firstweek;
 
-public class Person {
+public class Person implements Comparable{
 
    private int age; // 0
    private float weight; // 0.0f
+
+   private String name;
 
    Person(){}
    Person(int age, float weight){
@@ -11,7 +13,13 @@ public class Person {
       this.weight = weight;
    }
 
-   void run(){
+   Person(String name, int age, float weight){
+      this.name = name;
+      this.age = age;
+      this.weight = weight;
+   }
+
+   final void run(){
 
    }
 
@@ -24,6 +32,14 @@ public class Person {
 
    }
 
+   public String getName() {
+      return name;
+   }
+
+   public void setName(String name) {
+      this.name = name;
+   }
+
    boolean isTeen(){
       return false; // TODO implement later
    }
@@ -34,6 +50,11 @@ public class Person {
 
    public void setAge(int age){
       this.age = age;
+   }
+
+   @Override
+   public int compareTo(Object o) {
+      return 0;
    }
 
 }
