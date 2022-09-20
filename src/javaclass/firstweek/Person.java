@@ -13,7 +13,7 @@ public class Person implements Comparable{
       this.weight = weight;
    }
 
-   Person(String name, int age, float weight){
+   public Person(String name, int age, float weight){
       this.name = name;
       this.age = age;
       this.weight = weight;
