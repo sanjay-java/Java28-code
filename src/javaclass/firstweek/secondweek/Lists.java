@@ -32,9 +32,11 @@ public class Lists {
         // IndexOf
 
 
-        personsList.add(new Person("name1", 18, 204f));
+        personsList.add(new Person("name1", 18, 204f));  // 1 nanosec
         personsList.add(new Person("name2", 45, 124f));
         personsList.add(new Person("name3", 34, 400f));
+
+
         personsList.add(new Person("name4", 32, 204f));
         personsList.add(new Person("name5", 45, 124f));
         personsList.add(new Person("name6", 87, 400f));
@@ -83,7 +85,5 @@ public class Lists {
 
     // lot of adds and removals
     // LinkedList
-
-
 
 }

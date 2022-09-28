@@ -32,6 +32,10 @@ public class Person implements Comparable{
 
    }
 
+   public String toString(){
+      return this.name + " " + this.age + " " + this.weight;
+   }
+
    public String getName() {
       return name;
    }
